@@ -6,32 +6,13 @@ baliky = {
     "B947X": False,
 }
 
-i = input(" Zadej kód balíku : ")
-if baliky["B541X"] == True :
-    print("Balík byl předán kurýrovi")
-else :
-    print("Balík zatím nebyl předán kurýrovi")
 
-a = input(" Zadej kód balíku : ")
-if baliky["B547X"] == True :
-    print("Balík byl předán kurýrovi")
-else :
-    print("Balík zatím nebyl předán kurýrovi")
+balik = input(" Zadej kód balíku : ")
 
-b = input(" Zadej kód balíku : ")
-if baliky["B251X"] == True :
-    print("Balík byl předán kurýrovi")
-else :
-    print("Balík zatím nebyl předán kurýrovi")
-
-c = input(" Zadej kód balíku : ")
-if baliky["B501X"] == True :
-    print("Balík byl předán kurýrovi")
-else :
-    print("Balík zatím nebyl předán kurýrovi")
-
-d = input(" Zadej kód balíku : ")
-if baliky["B947X"] == True :
-    print("Balík byl předán kurýrovi")
-else :
-    print("Balík zatím nebyl předán kurýrovi")
+if balik in baliky:
+    if baliky[balik]:
+        print("Balík byl doručen")
+    else :
+        print ("Balík zatím nebyl doručen")
+else:
+    print (" Balik neexistuje ")
