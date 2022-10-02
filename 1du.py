@@ -15,3 +15,12 @@ if balik in baliky:
         print ("Balík zatím nebyl doručen")
 else:
     print (" Balik neexistuje ")
+
+
+
+a = input("Jaky region tě zajima? ")
+for stat in staty:
+    if stat['region'] == a:
+         print(stat['name'])
+else:
+    print("Neznámý region")
